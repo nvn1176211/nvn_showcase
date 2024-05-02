@@ -16,16 +16,12 @@
         <div class="d-flex">
             <div class="me-3 d-flex align-items-center">
                 <i class="bi bi-circle-half p-2 me-2 cursor-pointer" id="dark-mode-switch"></i>
-                <select name="lang" id="lang-select" class="form-select">
-                    <option value="en" selected>EN</option>
-                    <option value="vi">VI</option>
-                </select>
             </div>
         </div>
     </div>
     <div>
         <h5 class="mb-5">Welcome to NVN showcase!</h5>
-        <div id="page-card" class="card cursor-pointer" style="width: 18rem;" data-url="wh.html">
+        <div id="page-card" class="card cursor-pointer" style="width: 18rem;" data-url="http://nguyenvannhan.lovestoblog.com/wh.html">
             <img src="https://live.staticflickr.com/65535/53390179560_2bb4636e65.jpg" width="auto" height="auto"
                 alt="war-history-wallpaper" />
             <div class="card-body">
@@ -57,7 +53,7 @@
             'click': function () {
                 $('#page-loading-elm').css('display', 'flex');
                 let path = $(this).attr('data-url');
-                location.href = location.href + path;
+                location.href = path;
             }
         })
 
